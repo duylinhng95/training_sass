@@ -19,6 +19,10 @@ body {
 	line-height: 1;
 }
 
+body #subpage {
+	background: #f1efee url('../images/bg_alt.png');
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -255,11 +259,20 @@ blockquote p {
 	border-top: 1px solid #cec5c0;
 }
 
+#subpage #recentWork h3 {
+	font-size: 24px;
+	color: #2f231e;
+}
+
 #recentWork h2 {
 	border: none;
 	margin-bottom: 0;
 	padding: 28px;
 	margin-top: 11px;
+}
+
+#subpage #recentWork ol {
+	top: 0;
 }
 
 #recentWork ol {
@@ -287,6 +300,11 @@ blockquote p {
 
 #recentWork ol li a:hover {
 	text-decoration: none;
+}
+
+#subpage #recentWork p {
+	text-align: left;
+	line-height: 18px;
 }
 
 #recentWork p {
@@ -352,4 +370,21 @@ div.image_display {
 	float:right;
 	padding-right: 45px;
 	margin-top: -17px;
+}
+
+body .single #main #firstContent {
+	width: 100%;
+}
+
+#info {
+	margin-top: 5%;
+}
+
+button#button {
+    background-color: #cdc4be;
+    border-color: #cdc4be;
+    width: 101px;
+    height: 34px;
+    padding: 0px;
+    font-size: 14px;
 }
