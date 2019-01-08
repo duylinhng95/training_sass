@@ -3,7 +3,9 @@ var sass = require('gulp-sass');
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/styles.scss')
-            .pipe(sass())
+            .pipe(sass({
+		      includePaths: ['node_modules']
+		    }))
             .pipe(gulp.dest('app/css'))
 })
 

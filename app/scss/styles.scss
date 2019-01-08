@@ -1,3 +1,4 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
 $font-stack:    Helvetica, sans-serif;
 $dark-brown: #291e18;
 $brown: #32251f;
@@ -76,9 +77,7 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-
-#container {
-	width: 1002px;
+.container {
 	margin: 0px auto;
 	text-align: left;
 	position: relative;
@@ -155,7 +154,7 @@ a:hover {
 
 #slogan img{
 	position: absolute;
-	top: -87px;
+	top: -190px;
 	left: -40px;
 }
 
@@ -165,17 +164,15 @@ a:hover {
 	font-size: 18px;
 	color: #a68a7d;
 	border-left: 1px solid #4f3b33;
+	margin-right: 0px;
 }
 
 #slogan a {
 	color: white;
 }
-
-#main {
-	padding: 0 36px 100px 347px;
-	overflow: hidden;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+.main{
+	position: relative;
+	margin-top: 2%;
 }
 
 #main div#firstContent {
@@ -250,4 +247,109 @@ blockquote p {
 	border-right: 10px solid #f7f5f4;
 	position: absolute;
 	right: 30px;
+}
+
+#recentWork {
+	clear: both;
+	position: relative;
+	border-top: 1px solid #cec5c0;
+}
+
+#recentWork h2 {
+	border: none;
+	margin-bottom: 0;
+	padding: 28px;
+	margin-top: 11px;
+}
+
+#recentWork ol {
+	position: relative;
+	right: -45%;
+	top: 45px;
+}
+
+#recentWork ol li {
+	width: 16px;
+	display: inline;	
+}
+
+#recentWork ol li a {
+	color: white;
+	background: #6c535a;
+	padding: 5px 10px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 13px;
+}
+
+#recentWork ol li.chosen a, #recentWork ol li a:hover {
+	background: #a37a7e;
+}
+
+#recentWork ol li a:hover {
+	text-decoration: none;
+}
+
+#recentWork p {
+	text-align: right;
+	font-size: 13px;
+	font-style: italic;
+	color: #4e4d4d;
+	margin-top: 10px;
+}
+
+div.image_display {
+	padding: 11px;
+	border: 1px solid #d6cec9;
+	background: white;
+}
+
+.image_display img {
+	border: 1px solid #d6cec9;
+}
+
+#footerWrap {
+	border-top: 1px solid white;
+	background: #32251f;
+}
+
+#footer {
+	overflow: hidden;
+	color: #a68a7d;
+	width: 1002px;
+	margin: auto;
+	text-align: left;
+	padding-top: 35px;
+	font-size: 11px;
+	line-height: 17px;
+	text-transform: uppercase;
+	border-right: 1px solid #48362d;
+	border-left: 1px solid #48362d;
+}
+
+#footer p {
+	color: #a68a7d;
+	font-size: 11px;
+}
+
+#footer #footerLogo {
+	float: left;
+	background: #291e18;
+	width: 348px;
+	text-align: center;
+	padding-top: 2.5em;
+	padding-bottom: 3em;
+	margin-right: 32px;
+	margin-top: -35px;
+	border-right: 1px solid #48362d;
+}
+
+#footer strong a, #footer p a {
+	color: white;
+	font-weight: bold;
+}
+
+#footer p#footerInfo {
+	float:right;
+	padding-right: 45px;
+	margin-top: -17px;
 }
